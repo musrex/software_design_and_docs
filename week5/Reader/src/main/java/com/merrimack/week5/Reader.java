@@ -22,13 +22,16 @@ public class Reader {
     // added to doesn't get manipulated otherwise
     private final String errorMessage = "Please enter a valid number or 'done'.";
     
+    /**
+     * This method reads numbers input by the user and places them
+     * in an ArrayList
+     * @param Parameters (user input) are handled via the Scanner object
+     */
     public void readNumbers() {
         Boolean run = true;
         String userInput;
-        /*
-         * we use processed input to hold the lowercase input string, that way
-         * Done, DONE, done, dOne, etc., are all the same.
-         */
+        // we use processed input to hold the lowercase input string, that way
+        // Done, DONE, done, dOne, etc., are all the same.
         String processedInput;
         
         String textBlock = """
@@ -55,5 +58,13 @@ public class Reader {
         }
 
         input.close();
+    }
+    /*
+     * This method sorts the numbers in our ArrayList
+     * @param tempNums The temporary array for holding Ints before the get
+     * added to the Stack
+     */
+    public void sortNumber() {
+        Collections.sort(tempNums);
     }
 }
