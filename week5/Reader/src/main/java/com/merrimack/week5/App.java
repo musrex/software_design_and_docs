@@ -1,3 +1,10 @@
+package com.merrimack.week5;
+
+/**
+ * Hello world!
+ *
+ */
+
 /**
  *
  *Our main method - instantiates our program, prompts user for input, and
@@ -8,16 +15,15 @@
  * an int in a linked list and sorted smallest to largest.
  *
  */
-public static void main(String[] args) {
 
+public class App
+{
+    public static void main(String[] args) {
     
+        // Sorting the numbers
+        Collections.sort(numbers);
 
-
-    // Sorting the numbers
-    Collections.sort(numbers);
-
-    // Displaying the sorted numbers
-    System.out.println("Sorted Numbers: " + numbers);
-    
-}}
-
+        // Displaying the sorted numbers
+        System.out.println("Sorted Numbers: " + numbers);
+        }
+}

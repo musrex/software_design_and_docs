@@ -1,12 +1,11 @@
+package com.merrimack.week5;
 /**
  *
  * @author leandro
  */
-import java.util.LinkedList;
 import java.util.Scanner;
-import java.util.Stack;
+import java.util.ArrayList;
 import java.util.List;
-
 import java.util.Collections;
 
 /**
@@ -16,8 +15,7 @@ import java.util.Collections;
 public class Reader {
     // the following are all private because they don't need to be accessed
     // or changed, i.e. we're not deleting elements from the stack
-    private static Stack<Integer> numbers = new Stack<Integer>();
-    private static List<Integer> tempnums = new List<Integer>();
+    private static List<Integer> tempNums = new ArrayList<Integer>();
     private Scanner input = new Scanner(System.in);
     // this is also private, but we add final to tell the compiler
     // this string is final and unchanging, unlike the stack which does get
@@ -49,7 +47,7 @@ public class Reader {
             } else {
                 try {
                     int n = Integer.parseInt(processedInput);
-                    tempnums.add(n);
+                    tempNums.add(n);
                 } catch (NumberFormatException e) {
                     System.out.println(errorMessage);
                 }
