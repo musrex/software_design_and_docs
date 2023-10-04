@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.merrimack.week5","l":"App"},{"p":"com.merrimack.week5","l":"Reader"},{"p":"com.merrimack.week5","l":"Stacker"}];updateSearchResults();
