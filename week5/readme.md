@@ -4,7 +4,7 @@
   
 This program reads user input, sorts it, and adds it to a stack.  
   
-Note: Refer to LLopez_Project 5 folder - that is the final version.  
+**Note: Refer to LLopez_Project 5 folder - that is the final version.**  
   
 Classes:  
 ---  
